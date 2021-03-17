@@ -1,5 +1,5 @@
 module "final_snapshot_label" {
-  source     = "cloudposse/label/null"
+  source     = "git::https://github.com/matkovskiy/tf-modules.git//aws-null-label"
   version    = "0.24.1"
   attributes = ["final", "snapshot"]
   context    = module.this.context
